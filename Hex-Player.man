@@ -1,0 +1,45 @@
+.\" Hex-Player.man
+
+
+.TH man 1 "7. November 2017" "1.0" "Hex-Player Man Page"
+
+
+.SH NAME
+Hex-Player
+
+.SH SYNOPSIS
+.B Hex-Player
+<hex. Image|Reference|Video> [ <stream_index=(>=0)> <stream_order=(1-7)> ]
+
+.SH DESCRIPTION
+Playback of hexagonal Images and Videos
+
+
+.SH OPTIONS
+
+.IP <stream_index=(>=0)>
+.B (Video)
+Index des wiederzugebenden Streams
+
+.IP <stream_order=(1-7)>
+.B (Video)
+Ordnung Hexarray
+
+
+.SH EXAMPLES
+ ./Hex-Player Testset/Hex-Muxer/jellyfish.mkv
+ ./Hex-Player Testset/x264HMod/flower_f0.dat
+ ./Hex-Player Testset/x264HMod/_flower.dat
+ ./Hex-Player Testset/Hex-Muxer/jellyfish.mkv 0 5
+
+.SH SEE ALSO
+.B CHIP(1), dcrawHMod(1), Hex-Muxer(1), HMEC(1), Nexys-Video-HDMIHMod(1), x264HMod(1)
+
+.SH BUGS
+-
+
+.SH AUTHOR
+Tobias Schlosser (tobias.schlosser@informatik.tu-chemnitz.de)
+
+.SH COPYING
+Siehe Datei "COPYING"
